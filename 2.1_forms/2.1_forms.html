@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first form</title>
+  </head>
+  <body>
+    <form action="#">
+      <h1>Create an Account</h1>
+      <div>
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@domain.com"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="password">Password:</label><br />
+        <input type="password" name="password" id="password" />
+      </div>
+      <br />
+      <div>
+        <label for="age">Age:</label><br />
+        <select name="age" id="age">
+          <option value="select age" selected>Select age</option>
+          <option value="0-18">0-18</option>
+          <option value="19-34">19-34</option>
+          <option value="35+">35+</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="about">Tell us something about yourself:</label><br />
+        <textarea name="about" id="about" cols="50" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="tos"></label>
+        <input type="checkbox" name="tos" value="tos" id="tos" /> I agree to the
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+          >terms of service</a
+        >
+      </div>
+      <br />
+      <input type="submit" value="Sign up" />
+    </form>
+  </body>
+</html>
