@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 20px;
+            padding:8px;
+        }
+        body {
+            font-size: 30px;
+        }
+        .btn {
+            cursor:pointer;
+        }
+        #flat {
+            background-color: rgb(22, 126, 185);
+            border-style: none;
+        }
+        #flat:hover {
+            background-color: rgb(0, 96, 151);
+        }
+        #round {
+            background-color: rgb(58, 155, 58);
+            border-radius: 10px;
+            border-style: none;
+
+        }
+        #round:hover {
+            background-color: rgb(0, 105, 0);
+        }
+        #flat_ghost {
+            border-style: solid;
+            border-width: 2px;
+            border-color: red;
+        }
+        #flat_ghost:hover {
+            background-color: red;
+        }
+        #round_ghost {
+            border-style: solid;
+            border-width: 2px;
+            border-color: yellow;
+            border-radius: 10px;
+        }
+        #round_ghost:hover {
+            background-color: yellow;;
+        }
+    </style>
+</head>
+<body>
+    <button id="flat" class="btn">Register</button>
+    <button id="round" class="btn">Register</button>
+    <button id="flat_ghost" class="btn">Register</button>
+    <button id="round_ghost" class="btn">Register</button>
+</body>
+</html>
