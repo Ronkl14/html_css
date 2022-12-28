@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+        width: 100px;
+        height: 100px;
+        background: darkcyan;
+        /* the fix: changed the margin of outer box to 0 */
+        margin: 0;
+        }
+        #inner {
+        width: 50px;
+        height: 50px;
+        background: lightgreen;
+        position: absolute;
+        top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+</body>
+</html>
+
+<!-- the code didn't work as expected because the outer box had big margins
+and the position of the inner box included those margins. the margins of outer box changed to 0 to fix the issue. -->
