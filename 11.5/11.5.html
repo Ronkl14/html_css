@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+          list-style: none;
+          display: flex;
+          background-color: rgb(194, 189, 189);
+          align-items: center;
+          height: 5vh;
+          width: 100%;
+          padding: 0;
+          border: 1px solid black;
+        }
+
+        .heading {
+          font-weight: bold;
+          font-size: 1.3rem;
+          justify-self: start;
+
+        }
+
+        .right {
+            justify-self: end;
+        }
+
+        li {
+          padding: 5px;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(26, 55, 153);
+        }
+
+
+
+      
+      @media (max-width: 600px) {
+        ul {
+          list-style: none;
+          display: flex;
+          background-color: rgb(194, 189, 189);
+          flex-direction: column;
+          height: 30vh;
+          width: 30vw;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          border: 1px solid black;
+        }
+
+        .heading {
+          font-weight: bold;
+          font-size: 1.3rem;
+        }
+
+        li {
+          padding: 5px;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(26, 55, 153);
+        }
+      }
+
+      
+      
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" class="heading">APPLESEEDS</a></li>
+      <li><a href="#" class="right">HOME</a></li>
+      <li><a href="#" class="right">ABOUT</a></li>
+      <li><a href="#" class="right">PORTFOLIO</a></li>
+      <li><a href="#" class="right">CONTACT</a></li>
+    </ul>
+  </body>
+</html>
