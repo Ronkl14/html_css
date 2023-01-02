@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgb(77, 68, 68);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        position: absolute;
+        bottom: 20px;
+        z-index: 1;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: " ";
+        position: absolute;
+        top: 100%; 
+        left: 25%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(77, 68, 68) transparent transparent transparent;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores
+      sunt totam numquam, nostrum voluptatibus omnis iusto provident ex! Id
+      aspernatur eius atque, totam excepturi odio ex ipsum numquam esse porro
+      molestiae qui velit, debitis est. Totam ut, harum dignissimos
+      <a href="#" class="tooltip">
+        <span class="tooltiptext">Noice</span> id provident dicta?</a
+      >
+      facilis quam praesentium iusto nisi Commodi, consequuntur.
+    </p>
+  </body>
+</html>
