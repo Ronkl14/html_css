@@ -24,6 +24,7 @@
             justify-content: center;
             align-items: center;
             color:white;
+            position:relative;
         }
 
         .box::before {
@@ -31,7 +32,7 @@
             width: 20vw;
             height:25vh;
             position: absolute;
-            top:0;
+            top:-2px;
             left:2.5vw;
             border: black 2px solid;
         }
@@ -42,16 +43,23 @@
             height:20vh;
             position: absolute;
             top:2.5vh;
-            left:0;
+            left:-2px;
             border: rgb(0, 0, 0) 2px solid;
         }
 
-        p {
-            
+        .flex {
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
         }
+
     </style>
 </head>
 <body>
+    <div class="flex">
     <div class="box"><p>text</p> </div>
+</div>
 </body>
 </html>
