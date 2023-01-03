@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display:flex;
+            width:40vw;
+            height:5vh;
+            justify-content: space-between;
+            align-items: center;
+            margin:30px auto;
+            list-style: none;
+        }
+
+        li {
+            position:relative;
+            overflow: hidden;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        li::before {
+            content:"";
+            width:150%;
+            height: 90%;
+            border-bottom: 2px black solid;
+            position: absolute;
+            top:0;
+            left:0;
+            transform:translateX(-100%);
+            transition: all 1s;
+
+        }
+
+        li::after {
+            content:"";
+            width:150%;
+            height:100%;
+            border-top: 2px black solid;
+            position: absolute;
+            top:0;
+            left:0;
+            transform:translateX(100%);
+            transition: all 1s;
+
+        }
+
+        li:hover::before {
+            transform: translateX(0);
+        }
+
+        li:hover::after {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
