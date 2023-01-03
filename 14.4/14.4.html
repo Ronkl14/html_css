@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .circle {
+        width: 10rem;
+        height: 10rem;
+        background-color: white;
+        border-radius: 50% 50% 0 0;
+        position: relative;
+        margin: 70px;
+        animation-name: rotate;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+      }
+
+      .circle::before {
+        content: "";
+        width: 130%;
+        height: 130%;
+        background-image: linear-gradient(red, yellow, orange, white);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
+      .circle::after {
+        content: "";
+        width: 150%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: -30%;
+        background-color: white;
+      }
+
+      @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+  </body>
+</html>
