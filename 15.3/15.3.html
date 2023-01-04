@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        width: 40vw;
+        height: 30vh;
+        grid-template-areas:
+          "red red red red"
+          "blue green green blue-2"
+          "yellow yellow yellow yellow";
+        grid-gap: 1rem;
+        margin: auto;
+      }
+
+      .red,
+      .green,
+      .blue,
+      .blue-2 .yellow {
+        border-radius: 4px;
+      }
+
+      .red {
+        grid-area: red;
+        background-color: red;
+      }
+
+      .blue {
+        grid-area: blue;
+        background-color: blue;
+      }
+
+      .blue-2 {
+        grid-area: blue-2;
+        background-color: blue;
+      }
+
+      .green {
+        grid-area: green;
+        background-color: green;
+      }
+
+      .yellow {
+        grid-area: yellow;
+        background-color: yellow;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-areas:
+            "red red red red"
+            "blue green green green"
+            "blue green green green"
+            "purple purple purple purple"
+            "yellow yellow yellow yellow";
+        }
+
+        .purple {
+          grid-area: purple;
+          background-color: purple;
+        }
+
+        .blue-2 {
+          display:none;
+        }
+      }
+
+      @media (max-width:500px){
+        .container {
+          grid-template-areas:
+          'red'
+          'blue'
+          'green'
+          'green'
+          'purple'
+          'yellow';
+        } 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="blue-2"></div>
+      <div class="yellow"></div>
+      <div class="purple"></div>
+    </div>
+  </body>
+</html>
