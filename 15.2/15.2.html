@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            display:grid;
+            width:40vw;
+            grid-template-areas:
+            'red red red red'
+            'blue blue green green'
+            'blue blue purple-1 purple-2';
+            grid-gap:1rem;
+            margin:auto;
+        }
+
+        .red, .green, .blue, .purple-1, .purple-2 {
+            border-radius: 4px;
+            height: 10rem;
+        }
+
+        .red {
+            grid-area: red;
+            background-color: red;
+        }
+
+        .blue {
+            grid-area: blue ;
+            background-color: blue;
+        }
+
+        .green {
+            grid-area: green;
+            background-color: green;
+        }
+
+        .purple-1 {
+            grid-area: purple-1;
+            background-color: purple;
+        }
+
+        .purple-2 {
+            grid-area: purple-2;
+            background-color: purple;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="purple-1"></div>
+      <div class="purple-2"></div>
+    </div>
+  </body>
+</html>
